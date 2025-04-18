@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script defer>"login.js"</script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="assets/icons/Logo.png" alt="Logo"></a>
+        <nav>
+            <ul>
+                <li><a href="/index.html#portfolio">projets</a></li>
+                <li><a href="/index.html#contact">contact</a></li>
+                <li ><a href="login.html">log in</a></li>
+                <li><a href="instagram.com"><img src="./assets/icons/instagram.png" alt="Instagram"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="Login">Log In</h2>
+        <div class="form-wrapper">
+            <form id="loginForm">
+                <label for="email">E-mail : </label>
+                <input type="email" name="email" id="email" required> 
+                <p class="loginError"></p>
+
+                <label for="mdp">Mot de passe : </label>
+                <input type="password" name="password" id="password" required> 
+                <p class="passwordError"></p>
+                <button type="submit">Se connecter</button>
+                <br>
+                <p class="forgotPassword"><a href="#">Mot de passe oublié</a></p>
+            </form>
+        </div>
+     
+    </main>
+</body>
+</html>

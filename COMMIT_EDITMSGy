@@ -1,0 +1,33 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   ../Backend/.DS_Store
+#
+# Changes not staged for commit:
+#	modified:   ../Backend/.DS_Store
+#	modified:   ../Backend/database.sqlite
+#	modified:   assets/.DS_Store
+#	modified:   assets/style.css
+#	modified:   index.html
+#	modified:   login.html
+#	modified:   login.js
+#	modified:   script.js
+#
+# Untracked files:
+#	../.DS_Store
+#	../Backend/images/finn-QhjgAniliuY-unsplash_11747991685734.png
+#	../Backend/images/finn-QhjgAniliuY-unsplash_11747992291965.png
+#	../Backend/images/finn-QhjgAniliuY-unsplash_11747992550469.png
+#	../Backend/images/finn-QhjgAniliuY-unsplash_11747993169276.png
+#	../Backend/images/finn-QhjgAniliuY-unsplash_11747998271283.png
+#	../Backend/images/finn-QhjgAniliuY-unsplash_1_(1)1748000744989.png
+#	../Backend/images/instagram1747989258239.png
+#	.DS_Store
+#	../https:/
+#	../package-lock.json
+#

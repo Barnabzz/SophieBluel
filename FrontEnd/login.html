@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
     <link rel="stylesheet" href="./assets/style.css">
-    <script defer>"login.js"</script>
+    <script src="login.js" defer></script>
 </head>
 <body>
     <header>
@@ -30,14 +30,13 @@
             <form id="loginForm">
                 <label for="email">E-mail : </label>
                 <input type="email" name="email" id="email" required> 
-                <p class="loginError"></p>
 
                 <label for="mdp">Mot de passe : </label>
                 <input type="password" name="password" id="password" required> 
-                <p class="passwordError"></p>
-                <button type="submit">Se connecter</button>
+                <p id="errorMessage"></p>
+                <button class="connectionButton" type="submit">Se connecter</button>
                 <br>
-                <p class="forgotPassword"><a href="#">Mot de passe oublié</a></p>
+                <p class="forgotPassword"><a href="#">Mot de passe oublié ?</a></p>
             </form>
         </div>
      

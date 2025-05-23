@@ -9,9 +9,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
 	<meta name="description" content="">
 	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	<script type="module" src="script.js" defer></script>
-
 </head>
+
+
+
 <body>
 <header>
 	<a href="index.html"><img class="logo" src="assets/icons/Logo.png" alt="Logo"></a>
@@ -19,7 +22,8 @@
 		<ul>
 			<li><a href="#portfolio">projets</a></li>
 			<li><a href="#contact">contact</a></li>
-			<li><a href="login.html">log in</a></li>
+			<li><a class="loginOut" href="login.html">log in</a></li>
+			<li id="logOutHeader" class="none"><a   href="index.html">log out</a></li>
 			<li><a href="https://www.instagram.com/?hl=fr-ca"><img src="./assets/icons/instagram.png" alt="Instagram"></a></li>
 		</ul>
 	</nav>
@@ -39,7 +43,10 @@
 
 
 	<section id="portfolio">
-		<h2>Mes Projets</h2>
+		<div class="MesProjets">
+			<h2>Mes Projets</h2>
+		</div>
+
 		<div class="filter">
 			<button id="tous" class="btn-filtre">Tous</button>
 			<button value="1" id="objets" class="btn-filtre">Objets</button>
@@ -52,7 +59,7 @@
 	<section id="contact">
 		<h2>Contact</h2>
 		<p>Vous avez un projet ? Discutons-en !</p>
-		<form action="#" method="post">
+		<form action="#" method="post" class="form-contact">
 			<label for="name">Nom</label>
 			<input type="text" name="name" id="name">
 			<label for="email">Email</label>
@@ -63,6 +70,8 @@
 		</form>
 	</section>
 </main>
+
+
 
 <footer>
 	<nav>

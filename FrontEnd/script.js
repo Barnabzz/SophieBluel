@@ -16,11 +16,30 @@ let projets = []
   checkToken()
 
 
+//BOUTONS FILTRES 
 
-//Bouton filtre actif 
-const buttons = document.querySelectorAll('.btn-filtre');
+//Création des boutons
+const divBtns = document.querySelector(".filter")
 
-buttons.forEach(btn => {
+const btnTous = document.createElement("button");
+btnTous.id = "tous";
+btnTous.className = "btn-filtre";
+btnTous.textContent = "Tous";
+divBtns.appendChild(btnTous);
+
+fetch("http://localhost:5678/api/categories")
+.then(res => res.json())
+.then(categories => {
+  categories.forEach(cat => {
+    const btn = document.createElement("button");
+    btn.className = "btn-filtre"
+    btn.value = cat.id;
+    btn.textContent = cat.name;
+    divBtns.appendChild(btn)
+  });
+  //création du filtre
+  const buttons = document.querySelectorAll(".btn-filtre")
+  buttons.forEach(btn => {
   btn.addEventListener('click', (event) => {
     const target = event.target.value
     document.querySelector(".gallery").innerHTML = ""
@@ -36,6 +55,8 @@ buttons.forEach(btn => {
     btn.classList.add('active');
   });
 });
+});
+
 
 //Fontion gallery//
 function genererProjets(Allprojets){

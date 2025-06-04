@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         case 503:
                             alert ("Erreur côté serveur");
                         break;
-    
+
                         case 401:
                         case 404:
                             alert ("Email ou mot de passe incorrect");
